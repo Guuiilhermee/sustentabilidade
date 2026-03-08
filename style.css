@@ -136,3 +136,44 @@ button:hover {
     padding: 1.5rem;
     margin-top: auto;
 }
+
+@media (max-width: 390px){
+    .cabecalho{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 3em;
+    }
+    .cabecalho__logo{
+        font-size: .5rem;
+    }
+    li{
+        font-size: .3rem;
+    }
+}
+
+@media (max-width: 520px){
+    .cabecalho{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 3em;
+    }
+    .cabecalho__logo{
+        font-size: .5rem;
+    }
+    li{
+        font-size: .3rem;
+    }
+}
+@media (max-width: 375px){
+    .cabecalho{
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+    }
+    .cabecalho__logo{
+        font-size: .3rem;
+    }
+    li{
+        font-size: .3rem;
+    }
+}

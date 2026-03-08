@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar Insumos | Conexão Pallet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="buscar.png" type="image/x-icon">
+    <style>
+        .lista-doacoes { padding: 2em; max-width: 1000px; margin: 0 auto; }
+        .tabela-doacoes { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #eee; }
+        th { background-color: #001601; color: white; }
+        tr:hover { background-color: #f1f1f1; }
+        .status-badge { background: #3f8842; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo">♻️ Conexão Pallet</div>
+        <nav class="cabecalho__nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="doar.html">Doar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="lista-doacoes">
+        <h1 style="margin-bottom: .5rem;">Insumos Disponíveis para Reciclagem</h1>
+        <p style="margin-bottom: 1.5rem;">Encontre pallets próximos para seu projeto de <strong>RECICLAGEM</strong>.</p>
+
+        <table class="tabela-doacoes">
+            <thead>
+                <tr>
+                    <th>Empresa</th>
+                    <th>Quantidade</th>
+                    <th>Localização (Bairro)</th>
+                    <th>Tipo</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Super Atacado</td>
+                    <td>120 un</td>
+                    <td>Zona Industrial</td>
+                    <td><span class="status-badge">HT</span></td>
+                    <td><button>Reservar</button></td>
+                </tr>
+                <tr>
+                    <td>EcoMadeiras</td>
+                    <td>45 un</td>
+                    <td>Centro</td>
+                    <td><span class="status-badge">HT</span></td>
+                    <td><button>Reservar</button></td>
+                </tr>
+                <tr>
+                    <td>Construtora Silva</td>
+                    <td>80 un</td>
+                    <td>Bairro Novo</td>
+                    <td>Padrão</td>
+                    <td><button>Reservar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="rodape">
+        <p>Conexão Pallet &copy; 2026 - Fortalecendo o Ciclo de Vida dos Produtos.</p>
+    </footer>
+</body>
+</html>
