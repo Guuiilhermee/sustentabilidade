@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f7f4;
+}
+
+.cabecalho {
+    display: flex;
+    background-color: #001601;
+    padding: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho__logo {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.cabecalho__nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.cabecalho__nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cabecalho__nav a:hover {
+    color: #8ecc90;
+}
+
+.main-sec {
+    padding: 4rem 2rem;
+    background-color: #dcebdd;
+    text-align: center;
+}
+
+.info h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #001601;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: #528867;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #3f6b50;
+    transform: translateY(-2px);
+}
+
+.sec-dois {
+    background-color: #528867;
+    padding: 4rem 2rem;
+}
+
+.row {
+    display: flex;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    background-color: #001601;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.card_content {
+    padding: 1.5rem;
+}
+
+.card_content li {
+    margin-bottom: 0.8rem;
+    color: #333;
+    list-style: none;
+}
+
+.tag {
+    background-color: #3f8842;
+    color: #fff;
+    padding: 0.6rem;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.rodape {
+    background-color: #001601;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
