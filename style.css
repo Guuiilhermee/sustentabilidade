@@ -15,16 +15,18 @@ body {
 .cabecalho {
     display: flex;
     background-color: #001601;
-    padding: 1.5rem;
-    justify-content: space-around;
+    padding: 1rem 5%;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .cabecalho__logo {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
+    white-space: nowrap;
 }
 
 .cabecalho__nav ul {
@@ -37,6 +39,7 @@ body {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
+    font-size: 1rem;
 }
 
 .cabecalho__nav a:hover {
@@ -60,6 +63,7 @@ body {
     justify-content: center;
     gap: 1.5rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 button {
@@ -116,7 +120,8 @@ button:hover {
 .card_content li {
     margin-bottom: 0.8rem;
     color: #333;
-    list-style: none;
+    list-style: disc;
+    margin-left: 20px;
 }
 
 .tag {
@@ -137,43 +142,52 @@ button:hover {
     margin-top: auto;
 }
 
-@media (max-width: 390px){
-    .cabecalho{
-        display: flex;
-        justify-content: space-evenly;
-        gap: 3em;
+
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column; 
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
     }
-    .cabecalho__logo{
-        font-size: .5rem;
+    
+    .cabecalho__nav ul {
+        gap: 0.8rem;
     }
-    li{
-        font-size: .3rem;
+
+    .cabecalho__logo {
+        font-size: 1.2rem;
+    }
+
+    .cabecalho__nav a {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .info h1 {
+        font-size: 1.6rem;
     }
 }
 
-@media (max-width: 520px){
-    .cabecalho{
-        display: flex;
-        justify-content: space-evenly;
-        gap: 3em;
+@media (max-width: 480px) {
+
+    .btn {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 10%;
     }
-    .cabecalho__logo{
-        font-size: .5rem;
+
+    button {
+        width: 100%;
     }
-    li{
-        font-size: .3rem;
+
+    .lista-doacoes {
+        padding: 1em 0.5em;
+        overflow-x: auto;
     }
-}
-@media (max-width: 375px){
-    .cabecalho{
-        display: flex;
-        justify-content: space-between;
-        gap: 2em;
-    }
-    .cabecalho__logo{
-        font-size: .3rem;
-    }
-    li{
-        font-size: .3rem;
+    
+    .tabela-doacoes {
+        font-size: 0.8rem;
     }
 }
