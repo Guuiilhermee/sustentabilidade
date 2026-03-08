@@ -134,6 +134,88 @@ button:hover {
     font-size: 0.9rem;
 }
 
+.sustentabilidade-resumo {
+    padding: 4rem 10%;
+    background-color: #fff;
+    color: #001601;
+}
+
+.sustentabilidade-resumo h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #528867;
+}
+
+.sustentabilidade-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.sustentabilidade-item {
+    background: #f4f7f4;
+    padding: 1.5rem;
+    border-left: 4px solid #528867;
+}
+
+.jornada-ods {
+    padding: 4rem 5%;
+    background-color: #dcebdd;
+    text-align: center;
+}
+
+.passos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.passo {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+}
+
+.passo-numero {
+    width: 50px;
+    height: 50px;
+    background: #001601;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.ods-destaque {
+    margin-top: 1rem;
+    padding-top: 2rem;
+    /* border-top: 1px solid #acc6ad; */
+}
+
+.ods-lista {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.ods-badge {
+    background: #528867;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
 .rodape {
     background-color: #001601;
     color: white;
@@ -141,8 +223,6 @@ button:hover {
     padding: 1.5rem;
     margin-top: auto;
 }
-
-
 
 @media (max-width: 768px) {
     .cabecalho {
@@ -167,6 +247,13 @@ button:hover {
 
     .info h1 {
         font-size: 1.6rem;
+    }
+    .sustentabilidade-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .passos-container {
+        flex-direction: column;
     }
 }
 
